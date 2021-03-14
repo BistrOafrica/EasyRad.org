@@ -448,17 +448,48 @@ body .container-fluid {
     body .container-fluid .contestation .btn-md-primary {
       background-color: #DBDEE4;
       width: 15em; }
+      @media (max-width: 768px) {
+        body .container-fluid .contestation .btn-md-primary {
+          display: none; } }
     body .container-fluid .contestation .active, body .container-fluid .contestation .btn-md-primary:hover {
       background-color: #E31D3B;
       color: white;
       font-weight: 600;
       font-style: bold; }
+      @media (max-width: 768px) {
+        body .container-fluid .contestation .active, body .container-fluid .contestation .btn-md-primary:hover {
+          display: inline-block;
+          border-radius: 5px !important; } }
     body .container-fluid .contestation .contestation-body {
-      width: 80%;
+      width: 65%;
       margin: 50px auto;
-      text-align: center; }
+      text-align: center;
+      border: 1px solid #e7e7e7;
+      border-radius: 10px; }
       body .container-fluid .contestation .contestation-body .h1 {
         font-size: 1.5em; }
+      @media (max-width: 768px) {
+        body .container-fluid .contestation .contestation-body .contestation-en-ligne {
+          width: 100%;
+          display: block; } }
+      body .container-fluid .contestation .contestation-body .contestation-en-ligne .btn-md-primary {
+        background-color: #DBDEE4;
+        width: 15em; }
+        @media (max-width: 768px) {
+          body .container-fluid .contestation .contestation-body .contestation-en-ligne .btn-md-primary {
+            display: block;
+            width: 95%;
+            margin: 5px auto 0px;
+            border-radius: 5px !important; } }
+      body .container-fluid .contestation .contestation-body .contestation-en-ligne .btn-md-primary:hover {
+        background-color: #E31D3B;
+        color: white;
+        font-weight: 600;
+        font-style: bold; }
+        @media (max-width: 768px) {
+          body .container-fluid .contestation .contestation-body .contestation-en-ligne .btn-md-primary:hover {
+            display: inline-block;
+            border-radius: 5px !important; } }
       body .container-fluid .contestation .contestation-body .contestation-icon {
         background-color: ghostwhite;
         width: 6em;
@@ -473,6 +504,15 @@ body .container-fluid {
         margin: 10px auto;
         flex-flow: row nowrap;
         justify-content: space-between; }
+        body .container-fluid .contestation .contestation-body .contestation-control .mobile {
+          display: none; }
+        @media (max-width: 768px) {
+          body .container-fluid .contestation .contestation-body .contestation-control {
+            width: 100%; }
+            body .container-fluid .contestation .contestation-body .contestation-control .some-text {
+              display: none; }
+            body .container-fluid .contestation .contestation-body .contestation-control .btn-previous, body .container-fluid .contestation .contestation-body .contestation-control .btn-next {
+              display: inline-block !important; } }
       body .container-fluid .contestation .contestation-body .btn-previous, body .container-fluid .contestation .contestation-body .btn-next {
         width: 4em;
         height: 4em;
@@ -905,7 +945,7 @@ body .container-fluid {
               width: 100%;
               max-height: calc(width); }
             body .container-fluid .main-content header .La-presse-en-parle .mission .mission-card h2 {
-              font-size: 1.5em;
+              font-size: 1.0em;
               text-align: center; }
             @media (max-width: 769px) {
               body .container-fluid .main-content header .La-presse-en-parle .mission .mission-card {

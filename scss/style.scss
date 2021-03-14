@@ -540,20 +540,54 @@ body{
             .btn-md-primary{
                 background-color:#DBDEE4;
                 width: 15em;
-                
+                @media (max-width:768px){
+                    display: none;
+                }                
             }
             .active,.btn-md-primary:hover{
                 background-color: $primaryRed;
                 color: white;
                 font-weight: 600;
                 font-style: bold;
+                @media (max-width:768px){
+                    display: inline-block;
+                    border-radius: 5px!important;
+                }                
             }
             .contestation-body{
-                width: 80%;
+                width: 65%;
                 margin: 50px auto;
                 text-align: center;
+                border: 1px solid rgb(231, 231, 231);
+                border-radius: 10px;
                 .h1{
                     font-size: 1.5em;
+                }
+                .contestation-en-ligne{
+                    @media (max-width:768px){
+                        width: 100%;
+                        display: block;
+                    } 
+                    .btn-md-primary{
+                        background-color:#DBDEE4;
+                        width: 15em;
+                        @media (max-width:768px){
+                            display: block;
+                            width:95%;
+                            margin: 5px auto 0px;
+                            border-radius: 5px!important;
+                        }                
+                    }
+                    .btn-md-primary:hover{
+                        background-color: $primaryRed;
+                        color: white;
+                        font-weight: 600;
+                        font-style: bold;
+                        @media (max-width:768px){
+                            display: inline-block;
+                            border-radius: 5px!important;
+                        }
+                    }
                 }
                 .contestation-icon{
                     background-color: ghostwhite;
@@ -570,6 +604,20 @@ body{
                     margin: 10px auto;
                     flex-flow: row nowrap;
                     justify-content: space-between;
+                    .mobile{
+                        display: none;
+                    }
+                    @media (max-width:768px){
+                       width: 100%;
+                       .some-text{
+                           display: none;
+                           
+                       }
+                       .btn-previous,.btn-next{
+                        display: inline-block!important;
+                    }
+                    }
+                    
                 }
                 .btn-previous,.btn-next{
                     width: 4em;
@@ -1104,7 +1152,7 @@ body{
 
                             }
                             h2{
-                                font-size: 1.5em;
+                                font-size: 1.0em;
                                 text-align: center;
 
                             }
